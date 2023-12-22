@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-Up Page</title>
+  <title>login Page</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -14,25 +14,23 @@
       <!--pinterest logo-->
       <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo"
         class="img1" />
-      <p class="header">Make account to see more</p>
-      <form action="/register" method="post">
-        <input type="email" name="email" placeholder="Email" class="detail" /><br />
+      <p class="header">Log In to see more</p>
+      <form action="/login" method="post">
         <input type="text" name="username" placeholder="Username" class="detail" />
-        <input type="text" name="fullname" placeholder="Full Name" class="detail" />
         <input type="password" name="password" placeholder="Password" class="detail" />
-        <input type="submit" class="btn int" value="Register Account" >
+        <input type="submit" class="btn int" value="LogIn My Account" >
       </form>
 
       <a href="/forgot" class="forgotbtn"><strong>Forgot your password?</strong></a href="/forgot">
 
-      <p class="or">OR</p>
+      <!-- <p class="or">OR</p>
       <button class="btn fbk">
         <i class="fab fa-facebook fa-lg" style="color: white; padding-right: 10px"></i><a href="#">Continue with
           Facebook</a></button><br />
       <button class="btn ggl">
         <i class="fab fa-google" style="color: rgb(11, 241, 22); padding-right: 10px"></i><a href="#">Continue with
           Google</a>
-      </button>
+      </button> -->
 
       <footer>
         <p>
@@ -40,7 +38,7 @@
           <b>Terms of Service, Privacy policy.</b>
         </p>
         <hr />
-        <p>Already on Pinterest yet?<a href="/login"> Sign in</a></p>
+        <p>Not on Pinterest yet? <a href="/">Sign up</a></p>
       </footer>
     </div>
   </div>
