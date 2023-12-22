@@ -42,10 +42,12 @@ body {
     height: 40px;
     text-decoration: none;
     color: white;
-    border-radius: 20px 0;
-    background: rgb(1, 53, 143);
+    border-radius: 5px;
+    background: #f30d19;
 }
-
+.button:hover{
+    background: #df0812;
+}
 .upper-icons svg:hover {
     opacity: 0.8;
     cursor: pointer;
