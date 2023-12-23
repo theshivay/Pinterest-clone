@@ -15,15 +15,20 @@
       <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo"
         class="img1" />
       <p class="header">Log In to see more</p>
-      <form action="/login" method="post">
-        <input type="text" name="username" placeholder="Username" class="detail" />
-        <input type="password" name="password" placeholder="Password" class="detail" />
-        <input type="submit" class="btn int" value="LogIn My Account" >
-      </form>
+      <% if(error.length>0){%>
+        <p class="error">
+          <%=error%>
+        </p>
+        <%}%>
+          <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Username" class="detail" />
+            <input type="password" name="password" placeholder="Password" class="detail" />
+            <input type="submit" class="btn int" value="LogIn My Account">
+          </form>
 
-      <a href="/forgot" class="forgotbtn"><strong>Forgot your password?</strong></a href="/forgot">
+          <a href="/forgot" class="forgotbtn"><strong>Forgot your password?</strong></a href="/forgot">
 
-      <!-- <p class="or">OR</p>
+          <!-- <p class="or">OR</p>
       <button class="btn fbk">
         <i class="fab fa-facebook fa-lg" style="color: white; padding-right: 10px"></i><a href="#">Continue with
           Facebook</a></button><br />
@@ -32,14 +37,14 @@
           Google</a>
       </button> -->
 
-      <footer>
-        <p>
-          By continuing, you agree to Pinterest's
-          <b>Terms of Service, Privacy policy.</b>
-        </p>
-        <hr />
-        <p>Not on Pinterest yet? <a href="/">Sign up</a></p>
-      </footer>
+          <footer>
+            <p>
+              By continuing, you agree to Pinterest's
+              <b>Terms of Service, Privacy policy.</b>
+            </p>
+            <hr />
+            <p>Not on Pinterest yet? <a href="/">Sign up</a></p>
+          </footer>
     </div>
   </div>
 
